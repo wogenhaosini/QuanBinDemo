@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+       <group
+           android:checkableBehavior="single">
+
+           <item
+               android:id="@+id/nav_menu_fankui"
+               android:icon="@drawable/ic_action_iconfont_rectangle390"
+               android:title="@string/fankui"/>
+
+           <item
+               android:id="@+id/nav_menu_dianhua"
+               android:icon="@drawable/ic_action_iconfont_icon"
+               android:title="@string/dianhua"/>
+           <item
+               android:id="@+id/nav_menu_fenxiang"
+               android:icon="@drawable/ic_action_iconfont_dangmianfu"
+               android:title="@string/fenxiang"/>
+           <item
+               android:id="@+id/nav_menu_huojian"
+               android:icon="@drawable/ic_action_iconfont_shuidianmei"
+               android:title="@string/huojian"/>
+       </group>
+
+
+       <item
+           android:id="@+id/nav_menu_grop"
+           android:title="二级分类"
+           >
+           <menu >
+
+               <group android:checkableBehavior="single">
+               <item
+                   android:icon="@drawable/ic_action_iconfont_xinyongqiahuankuan"
+                   android:title="全"/>
+               <item
+                   android:icon="@drawable/ic_action_iconfont_zhuanzhang"
+                   android:title="斌"/>
+               </group>
+           </menu>
+       </item>
+
+</menu>

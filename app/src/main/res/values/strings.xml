@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">QuanBinDemo</string>
+
+
+    <!-- NavigationView 文案 -->
+    <string name="fankui">反馈</string>
+    <string name="dianhua">电话</string>
+    <string name="fenxiang">分享</string>
+    <string name="huojian">火箭</string>
+
+    <string name="dakai">打开</string>
+    <string name="guanbi">关闭</string>
+
+    <string name="nav_titile">全斌的示例</string>
+    <string name="nav_subTitle">全斌的Demo</string>
+</resources>
