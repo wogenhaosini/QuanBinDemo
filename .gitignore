@@ -5,3 +5,12 @@
 .DS_Store
 /build
 .idea
+QuanBinDemo.iml
+gradle/wrapper/gradle-wrapper.properties
+gradle/
+/app/.gitignore
+/app/app.iml
+/app/build
+gradlew
+.gitignore
+/gradlew
