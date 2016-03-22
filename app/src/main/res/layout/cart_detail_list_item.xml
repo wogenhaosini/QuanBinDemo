@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/cart_detail_list_item_name"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="周年庆 爱先锋 等等等"/>
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:gravity="end|center_vertical"
+            android:id="@+id/cart_detail_list_item_price"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="$18"/>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            layout="@layout/view_number_set" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

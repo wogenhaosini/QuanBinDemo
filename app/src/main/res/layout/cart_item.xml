@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/cart_type_icon"
+            android:src="@drawable/ic_menu_selected"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/cart_type_title"
+            android:layout_marginLeft="12dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_small"
+            android:layout_toRightOf="@id/cart_type_icon"
+            android:text="TYPE TITLE"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:id="@+id/cart_time_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_normal"
+            android:text="收货时间"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1小时送达"
+            android:id="@+id/cart_time_set"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_toRightOf="@id/cart_time_title"
+            android:layout_marginLeft="12dp" />
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/cart_time_more_icon"
+            android:src="@drawable/perm_group_shortrange_network"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="可预定"
+            android:id="@+id/cart_time_set_type"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_toLeftOf="@id/cart_time_more_icon"
+            android:layout_marginRight="12dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:id="@+id/cart_memo_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_normal"
+            android:text="收货备注" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/cart_memo_input"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_normal"
+            android:layout_toRightOf="@id/cart_memo_title"
+            android:background="@drawable/btn_default_disabled"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/cart_shopping_list_container"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:gravity="center_vertical"
+            android:id="@+id/cart_pay_cash"
+            android:text="共￥38"
+            android:textSize="@dimen/text_small"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:id="@+id/cart_pay_deliver"
+            android:text="闪电送，免运费"
+            android:textSize="@dimen/text_small"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/cart_commit"
+            android:text="选好了"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/darker_gray"
+            android:background="@android:color/holo_red_light"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
