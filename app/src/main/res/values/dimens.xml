@@ -21,5 +21,4 @@
 
     <dimen name="card_elevation">4dp</dimen>
     <dimen name="card_corner_radius">6dp</dimen>
-
 </resources>
